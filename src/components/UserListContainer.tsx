@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect } from "react";
 import { useActions } from "../hooks/useActions";
 import { useTypedSelector } from "../hooks/useTypedSelector";
@@ -13,7 +14,7 @@ const UserListContainer: React.FC = () => {
   return (
     <div>
       <h2>Users</h2>
-      <button onClick={() => fetchUser()}>Refresh</button>
+      <button onClick={() => fetchUser()}>Fetch</button>
       {loading && <div>Loading....</div>}
       {error && <div>{error}</div>}
       {!loading &&
