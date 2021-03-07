@@ -5,3 +5,9 @@ export const buyCake = () => {
     type: actionTypes.BUY_CAKE,
   };
 };
+
+export const buyIceCream = () => {
+  return {
+    type: actionTypes.BUY_ICECREAM,
+  };
+};
