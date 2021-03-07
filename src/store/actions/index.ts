@@ -8,3 +8,22 @@ export interface BuyCakeAction {
 export interface BuyIceCreamAction {
   type: actionTypes.BUY_ICECREAM;
 }
+
+interface FetchUserRequestAction {
+  type: actionTypes.FETCH_USER_REQUEST;
+}
+
+interface FetchUserSuccessAction {
+  type: actionTypes.FETCH_USER_SUCCESS;
+  payload: string[];
+}
+
+interface FetchUserErrorAction {
+  type: actionTypes.FETCH_USER_FAILURE;
+  payload: string;
+}
+
+export type FetchUserAction =
+  | FetchUserRequestAction
+  | FetchUserSuccessAction
+  | FetchUserErrorAction;

@@ -3,6 +3,7 @@ import { Provider } from "react-redux";
 import { store } from "./store";
 import IceCreamContainer from "./components/IceCreamContainer";
 import NewCakeContainer from "./components/NewCakeContainer";
+import UserListContainer from "./components/UserListContainer";
 
 const App: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const App: React.FC = () => {
       <CakeContainer />
       <IceCreamContainer />
       <NewCakeContainer />
+      <UserListContainer />
     </Provider>
   );
 };
